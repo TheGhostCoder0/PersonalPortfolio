@@ -21,4 +21,4 @@ While you're free to explore the repository, I recommend using the live site for
 
 ## Feedback and Contact
 
-If you have feedback on my portfolio or want to reach out, the best way is through the contact form on my live website. 
+If you have feedback on my portfolio or want to reach out, the best way is through the contact information on my live website. 
