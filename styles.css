@@ -1,7 +1,31 @@
-body {
+.test {
     font-family: Arial, sans-serif;
-    background-image: url('background_1.png');
+    background-image: url('images/background_1.png');
 }
+
+.test2 {
+    position: relative;
+    overflow: hidden;
+    /* Ensure the body covers the viewport */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.test2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/binary.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Adjust the blur level as needed */
+    transform: scale(1.1); /* Optional: to reduce the 'edge' effect caused by blurring */
+    z-index: -1; /* Ensures the background is behind the content */
+}
+
 
 header {
     background-color: #343a40;
@@ -12,8 +36,8 @@ header {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
@@ -40,7 +64,7 @@ ul li {
 }
 
 .background-image {
-    background-image: url('code_background.jpg');
+    background-image: url('images/code_background.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -48,14 +72,14 @@ ul li {
 
 .about-section {
     color: white;
-    background-image: url('background_2.png');
+    background-image: url('images/background_2.png');
     background-size: cover;
     background-position: center;
 }
 
 .projects-section {
     color: white;
-    background-image: url('background_4.png');
+    background-image: url('images/background_4.png');
     background-size: cover;
     background-position: center;
 }
@@ -71,14 +95,14 @@ ul li {
 
 .courses-section {
     color: white;
-    background-image: url('background_3.png');
+    background-image: url('images/background_3.png');
     background-size: cover;
     background-position: center;
 }
 
 .contact-section {
     color: white;
-    background-image: url('background_5.png');
+    background-image: url('images/background_5.png');
     background-size: cover;
     background-position: center;
 }
@@ -101,13 +125,13 @@ ul li {
 
 .skills-section {
     color: white;
-    background-image: url('background_6.png');
+    background-image: url('images/background_6.png');
     background-size: cover;
     background-position: center;
 }
 .resume-section {
     color: white;
-    background-image: url('background_7.png');
+    background-image: url('images/background_7.png');
     background-size: cover;
     background-position: center;
 }
@@ -120,4 +144,69 @@ text-shadow:
 -1px 1px 0 rgba(255,255,255,0.8),
  1px 1px 0 rgba(255,255,255,0.8); /* White text outline using shadow */
 padding: 5px; /* Some padding to space out the background from the text */
+}
+
+/* Custom CSS to increase navbar height */
+.navbar-nav .nav-link {
+    padding-top: 1.1rem;  /* increase top padding */
+    padding-bottom: 1.1rem;  /* increase bottom padding */
+    font-size: 1.25rem;
+    /* margin-right: 10px; */
+}
+
+.navbar {
+    align-items: center; /* ensures vertical centering if height is larger */
+}
+
+.icon-links a {
+    text-decoration: none;  /* Removes underline */
+    color: #c0c0c0;  /* Optional: keeps the icon color consistent */
+    margin-right: 32px; /* Spacing between icons */
+    margin-left: 32px; /* Spacing between icons */
+}
+
+.icon-links a:hover {
+    color: #007bff; /* Optional: change color on hover */
+}
+
+.header-title {
+    margin-bottom: 20px; /* Spacing below the header */
+    color: #007bff; /* Color of the header */
+}
+
+.dark-theme-h1 {
+    background-color: #343a40; /* Dark background */
+    color: white; /* Light text color */
+    padding: 16px; /* Optional: for some padding around the text */
+    margin-bottom: 64px;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 50px; /* Spacing between the two flex items */
+}
+
+.special-pic, .icons-back {
+    background-color: #343a40; /* Dark background */
+    padding: 45px;
+    border-radius: 24px;
+}
+
+.special-pic {
+    /* Additional styling for the photo section if needed */
+}
+
+.icons-back {
+    /* Additional styling for the icons section if needed */
+    display: flex;
+    justify-content: space-around; /* Spread out icons */
+}
+
+
+.course-card {
+    margin-bottom: 20px;
 }
