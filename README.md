@@ -17,6 +17,11 @@ This portfolio showcases my projects, skills, and experiences as a Computer Scie
 While you're free to explore the repository, I recommend using the live site for a more intuitive and detailed exploration of my works.
 
 - `index.html`: The main HTML file that serves as the landing page.
+- `contact.html`: Contact information and associated links.
+- `projects.html`: Showcases my CS projects with descriptions and links.
+- `courses.html`: Lists relevant CS courses I've taken.
+- `images/`: Directory for all website images.
+- `styles.css`: Central CSS file defining the website's styling.
 
 
 ## Feedback and Contact

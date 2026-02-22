@@ -1,196 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <!-- Bootstrap CSS -->
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- Optional: Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/simpleicons.min.css">
-    <link rel="stylesheet" href="boxicons.min.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Keena Vasiloff</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="favicon.png" alt="Home" width="64" height="64">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav me-auto">
-                    <a class="nav-link" href="contact.html">Links</a>
-                    <a class="nav-link active" href="projects.html">Projects</a>
-                    <a class="nav-link" href="courses.html">Relevant Courses</a>
-                </div>
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#section1">HackerMatch</a>
-                    <a class="nav-link" href="#section2">SynthiaAI</a>
-                    <a class="nav-link" href="#section3">EnergyAI</a>
-                    <a class="nav-link" href="#section4">YourClassLink</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="test4">
-        <div id="section1" class="project-section" style="background-image: url('images/encryption.jpg');">
-            <div class="project-title">HackerMatch</div>
-            <div class="project-subtitle">SacHacks V: Winner of Best Local Hack</div>
+
+<div class="navbar">
+    <a href="index.html" class="nav-logo">KV</a>
+
+    <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO / PAGE HEADER -->
+<div class="hero">
+    <div class="terminal-box">
+        <div class="name">> Projects</div>
+        <p class="subtitle">A selection of my course, hackathon, open-source, and personal projects.</p>
+    </div>
+</div>
+
+<!-- PROJECT SECTIONS -->
+<div class="section">
+    <h2 style="padding-bottom: 20px;">Course Projects</h2>
+    <div class="projects-grid">
+
+        <!-- ECS235A Term Project -->
+        <div class="project-card">
+            <div class="project-title">SDN Exploitation</div>
+            <div class="project-subtitle">ECS235A Term Project</div>
             <div class="project-description">
-                Developed a social media platform aimed at streamlining the hackathon team-building process, successfully addressing a common challenge within the hackathon community.
-                Implemented responsive UI/UX features using Next.js with TypeScript and styled components with Tailwind CSS, while also leading rigorous testing phases to enhance functionality and user experience.
+                Explored software-defined network security and vulnerability exploitation. Implemented Python scripts to simulate attack scenarios and defenses.
             </div>
-            <div class="technologies-section">
-                <div class="technology-title">Technologies</div>
-                <div class="technology-links">
-                    <a href="https://nextjs.org/" class="technology-link" target="_blank">
-                        <img src="images/nextjs.svg" alt="Next.js" class="svg">
-                    </a>
-                    <a href="https://www.typescriptlang.org/" class="technology-link" target="_blank">
-                        <img src="images/typescript.svg" alt="TypeScript" class="svg">
-                    </a>
-                    <a href="https://tailwindcss.com/" class="technology-link" target="_blank">
-                        <img src="images/tailwindcss.svg" alt="TailWindCSS" class="svg">
-                    </a>
-                    <a href="https://firebase.google.com/" class="technology-link" target="_blank">
-                        <img src="images/firebase.svg" alt="FireBase" class="svg">
-                    </a>
-                </div>
+            <div class="technology-icons">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+                <img src="images/html5.svg" alt="HTML5" class="tech-icon">
+                <img src="images/css3.svg" alt="CSS3" class="tech-icon">
             </div>
             <div class="project-links">
-                <a href="https://github.com/TheGhostCoder0/hackermatch-sachacks5" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://devpost.com/software/hacker_match" class="project-link" target="_blank">
-                    <img src="images/devpost.svg" alt="Devpost" class="svg">
-                    Devpost
-                </a>            
-                <a href="https://gamma.app/public/hacker-match-9itwwkc36n1apgi?mode=doc" class="project-link" target="_blank"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
-                <a href="https://www.figma.com/file/hBIY2o0sZu236SBu8W0Ysg/Prototype?type=design&node-id=0-1&mode=design" class="project-link" target="_blank">
-                    <img src="images/figma.svg" alt="Figma" class="svg">
-                    Figma
+                <a href="https://github.com/TheGhostCoder0/ECS235A_TermProject_SDN_Exploitation" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
                 </a>
-                <a href="https://hackermatch-sachacks5.vercel.app/" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Website</a>
             </div>
         </div>
-        <div id="section2" class="project-section" style="background-image: url('images/interview.png');">
-            <div class="project-title">SynthiaAI</div>
-            <div class="project-subtitle">UC Berkeley AI Hackathon</div>
+
+        <!-- ECS153 MiTM Project -->
+        <div class="project-card">
+            <div class="project-title">MitM Attack Simulation</div>
+            <div class="project-subtitle">ECS153 Network Security</div>
             <div class="project-description">
-                Collaborated with a team to conceive and prototype an AI-driven system that emulates realistic interview scenarios, offering users actionable feedback and tailored recommendations to refine their proficiency. Leveraged Python Flask for backend development, paired with JavaScript on the front end, while tapping into OpenAI's API to harness sophisticated AI functionalities.
+                Implemented a man-in-the-middle attack demonstration on HTTP traffic in a controlled lab environment. Focused on understanding packet interception and security mitigation.
             </div>
-            <div class="technologies-section">
-                <div class="technology-title">Technologies</div>
-                <div class="technology-links">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="technology-link" target="_blank">
-                        <img src="images/javascript.svg" alt="JavaScript" class="svg" style="scale: 117%">
-                    </a>
-                    <a href="https://react.dev/" class="technology-link" target="_blank">
-                        <img src="images/react.svg" alt="React" class="svg">
-                    </a>
-                    <a href="https://www.python.org/" class="technology-link" target="_blank">
-                        <img src="images/python.svg" alt="Python" class="svg">
-                    </a>
-                    <a href="https://flask.palletsprojects.com/en/3.0.x/" class="technology-link" target="_blank">
-                        <img src="images/flask.svg" alt="Flask" class="svg">
-                    </a>
-                    <a href="https://openai.com/" class="technology-link" target="_blank">
-                        <img src="images/openai.svg" alt="OpenAI" class="svg">
-                    </a>
-                </div>
+            <div class="technology-icons">
+                <img src="images/html5.svg" alt="HTML" class="tech-icon">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
             </div>
             <div class="project-links">
-                <a href="https://github.com/ManojBaasha/calhacks_2023" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://devpost.com/software/synthiaai" class="project-link" target="_blank">
-                    <img src="images/devpost.svg" alt="Devpost" class="svg">
-                    Devpost
-                </a>            
-                <a href="https://docs.google.com/presentation/d/1nU9wsIZQmCDirWhBbFlWCKXNqdkOb04-OZIJQ4oBBcE/edit#slide=id.g2299070a85c_0_2" class="project-link" target="_blank"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+                <a href="https://github.com/TheGhostCoder0/ECS153_MiTM_Project" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
             </div>
         </div>
-        <div id="section3" class="project-section" style="background-image: url('images/wind.png');">
+
+        <!-- Fused Distributed FS -->
+        <div class="project-card">
+            <div class="project-title">Fused Distributed FS</div>
+            <div class="project-subtitle">ECS 251 Term Project</div>
+            <div class="project-description">
+                Developed a distributed file system in C, focusing on performance with FUSE integration.
+            </div>
+            <div class="technology-icons">
+                <img src="images/c.svg" alt="C" class="tech-icon">
+                 <img src="images/cplusplus.svg" alt="C++" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/araiyan/Fused-Distributed-FS" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- ECS170 Group Project -->
+        <div class="project-card">
+            <div class="project-title">Data Analysis Pipeline</div>
+            <div class="project-subtitle">ECS170 Group 17 Final Project</div>
+            <div class="project-description">
+                Built a Jupyter Notebook pipeline for data analysis tasks, including visualization and statistical modeling of sample datasets.
+            </div>
+            <div class="technology-icons">
+                <img src="images/jupyter.svg" alt="Jupyter" class="tech-icon">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/TheGhostCoder0/ECS170Group17FinalProject" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- HACKATHONS -->
+<div class="section">
+    <h2 style="padding-bottom: 20px;">Hackathons</h2>
+    <div class="projects-grid">
+
+        <!-- HackerMatch -->
+        <div class="project-card">
+            <div class="project-title">HackerMatch</div>
+            <div class="project-subtitle">SacHacks V - Winner: Best Local Hack</div>
+            <div class="project-description">
+                Built a platform for hackathon team-building using Next.js and Tailwind CSS. Led testing and UX design for a smooth user experience.
+            </div>
+            <div class="technology-icons">
+                <img src="images/nextjs.svg" alt="Next.js" class="tech-icon">
+                <img src="images/typescript.svg" alt="TypeScript" class="tech-icon">
+                <img src="images/tailwindcss.svg" alt="Tailwind" class="tech-icon">
+                <img src="images/firebase.svg" alt="Firebase" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/TheGhostCoder0/hackermatch-sachacks5" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://devpost.com/software/hacker_match" class="terminal-link" target="_blank">
+                    <i class='bx bx-file'></i> Devpost
+                </a>
+            </div>
+        </div>
+
+        <!-- CalHacks 2023 -->
+        <div class="project-card">
+            <div class="project-title">SynthiaAI</div>
+            <div class="project-subtitle">CalHacks 2023</div>
+            <div class="project-description">
+                AI-powered interview simulator providing feedback and tailored recommendations. Backend with Flask, frontend with JS, leveraging OpenAI API.
+            </div>
+            <div class="technology-icons">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+                <img src="images/flask.svg" alt="Flask" class="tech-icon">
+                <img src="images/react.svg" alt="React" class="tech-icon">
+                <img src="images/javascript.svg" alt="JavaScript" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ManojBaasha/calhacks_2023" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://devpost.com/software/synthiaai" class="terminal-link" target="_blank">
+                    <i class='bx bx-file'></i> Devpost
+                </a>
+            </div>
+        </div>
+
+        <!-- HackDavis 2023 -->
+        <div class="project-card">
             <div class="project-title">EnergyAI</div>
             <div class="project-subtitle">HackDavis 2023</div>
             <div class="project-description">
-                Designed and implemented an AI-infused web platform aimed at predicting county energy consumption for social good, leveraging AI-powered linear regression techniques. Contributed to the integration of Python Flask for backend and Bootstrap for design, assisted in AI model development, and supported HTML/CSS structuring.
+                AI-infused web platform aimed at predicting county energy consumption for social good, leveraging AI-powered linear regression techniques.
             </div>
-            <div class="technologies-section">
-                <div class="technology-title">Technologies</div>
-                <div class="technology-links">
-                    <a href="https://www.python.org/" class="technology-link" target="_blank">
-                        <img src="images/python.svg" alt="Python" class="svg">
-                    </a>
-                    <a href="https://flask.palletsprojects.com/en/3.0.x/" class="technology-link" target="_blank">
-                        <img src="images/flask.svg" alt="Flask" class="svg">
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" class="technology-link" target="_blank">
-                        <img src="images/html5.svg" alt="HTML5" class="svg">
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="technology-link" target="_blank">
-                        <img src="images/css3.svg" alt="CSS3" class="svg">
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="technology-link" target="_blank">
-                        <img src="images/javascript.svg" alt="JavaScript" class="svg" style="scale: 117%">
-                    </a>
-                </div>
+            <div class="technology-icons">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+                <img src="images/flask.svg" alt="Flask" class="tech-icon">
+                <img src="images/html5.svg" alt="HTML5" class="tech-icon">
+                <img src="images/css3.svg" alt="CSS3" class="tech-icon">
+                <img src="images/javascript.svg" alt="JavaScript" class="tech-icon">
             </div>
             <div class="project-links">
-                <a href="https://github.com/TheGhostCoder0/HackDavis2023" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://devpost.com/software/energyai" class="project-link" target="_blank">
-                    <img src="images/devpost.svg" alt="Devpost" class="svg">
-                    Devpost
-                </a>    
-                <a href="https://docs.google.com/document/d/1f3gcFoxZFJHuTxzizi2lgRqoEPRIggetxf9Z73Z3DZI/edit" class="project-link" target="_blank">
-                    <img src="images/googledocs.svg" alt="GoogleDocs" class="svg">
-                    GoogleDocs
-                </a>            
+                <a href="https://github.com/TheGhostCoder0/HackDavis2023" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://devpost.com/software/energyai" class="terminal-link" target="_blank">
+                    <i class='bx bx-file'></i> Devpost
+                </a>
+                <a href="https://docs.google.com/document/d/1f3gcFoxZFJHuTxzizi2lgRqoEPRIggetxf9Z73Z3DZI/edit" class="terminal-link" target="_blank">
+                    <i class='bx bx-file'></i> Google Doc
+                </a>
             </div>
         </div>
-        <div id="section4" class="project-section" style="background-image: url('images/particles.jpg');">
-            <div class="project-title">YourClassLink</div>
-            <div class="project-description">
-                Developed a web platform designed to enable students to share class Discord links conveniently. Architected the system using Django for robust back-end operations, Bootstrap for a seamless front-end experience, and PostgreSQL for efficient data storage and retrieval.
-            </div>
-            <div class="technologies-section">
-                <div class="technology-title">Technologies</div>
-                <div class="technology-links">
-                    <a href="https://www.python.org/" class="technology-link" target="_blank">
-                        <img src="images/python.svg" alt="Python" class="svg">
-                    </a>
-                    <a href="https://www.djangoproject.com" class="technology-link" target="_blank">
-                        <img src="images/django.svg" alt="Django" class="svg">
-                    </a>
-                    <a href="https://getbootstrap.com/" class="technology-link" target="_blank">
-                        <img src="images/bootstrap.svg" alt="Bootstrap" class="svg">
-                    </a>
-                    <a href="https://www.postgresql.org/" target="_blank">
-                        <img src="images/postgresql.svg" alt="PostgreSQL" class="svg" style="scale: 120%">
-                    </a>
-                </div>
-            </div>
-            <div class="project-links">
-                <a href="https://www.yourclasslink.com" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Website</a>
-            </div>
-        </div>
+
     </div>
-    
-    <!-- Bootstrap JS and jQuery -->
-<script src="https://kit.fontawesome.com/647588f52e.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+</div>
+
+<!-- OPEN SOURCE -->
+<div class="section">
+    <h2 style="padding-bottom: 20px;">Open Source</h2>
+    <div class="projects-grid">
+
+        <!-- PrairieLearn -->
+        <div class="project-card">
+            <div class="project-title">PrairieLearn</div>
+            <div class="project-subtitle">Forked Online Learning Platform</div>
+            <div class="project-description">
+                Collaborative on the development of an open-sourced element for the PrairieLearn assessment platform.
+            </div>
+            <div class="technology-icons">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+                <img src="images/javascript.svg" alt="JavaScript" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/sairaheta1/PrairieLearn" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- PERSONAL -->
+<div class="section">
+    <h2 style="padding-bottom: 20px;">Personal Projects</h2>
+    <div class="projects-grid">
+
+        <!-- TodoList -->
+        <div class="project-card">
+            <div class="project-title">TodoList App</div>
+            <div class="project-subtitle">Go / Personal</div>
+            <div class="project-description">
+                Simple Go web application to manage tasks and track progress.
+            </div>
+            <div class="technology-icons">
+                <img src="images/go.svg" alt="Go" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/yourusername/TodoList" class="terminal-link" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- YourClassLink -->
+        <div class="project-card">
+            <div class="project-title">YourClassLink</div>
+            <div class="project-subtitle">Personal Python Project</div>
+            <div class="project-description">
+                A web platform designed to enable students to share class Discord links conveniently.
+            </div>
+            <div class="technology-icons">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+                <img src="images/django.svg" alt="Django" class="tech-icon">
+                <img src="images/bootstrap.svg" alt="Bootstrap" class="tech-icon">
+                <img src="images/postgresql.svg" alt="PostgreSQL" class="tech-icon">
+            </div>
+            <div class="project-links">
+                <a href="https://www.yourclasslink.com/" class="terminal-link" target="_blank">
+                    <i class='bx bx-link'></i> Website
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
