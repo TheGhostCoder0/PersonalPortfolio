@@ -497,3 +497,48 @@ canvas {
     text-shadow: none;
     color: #00e676;
 }
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    color: #1aff66;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+}
+
+.scroll-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* subtle neon divider instead of arrow */
+.scroll-line {
+    width: 30px;
+    height: 2px;
+    background: #1aff66;
+    margin: 0 auto;
+    box-shadow:
+        0 0 4px #1aff66,
+        0 0 8px #1aff66;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+#first-project-section {
+    scroll-margin-top: 40px; /* adjust to match navbar height */
+}

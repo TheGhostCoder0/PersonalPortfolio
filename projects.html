@@ -29,8 +29,13 @@
     </div>
 </div>
 
+<div class="scroll-indicator" onclick="scrollToProjects()">
+    <div class="scroll-text">Browse Projects</div>
+    <div class="scroll-line"></div>
+</div>
+
 <!-- PROJECT SECTIONS -->
-<div class="section">
+<div class="section" id="first-project-section">
     <h2 style="padding-bottom: 20px;">Course Projects</h2>
     <div class="projects-grid">
 
@@ -261,6 +266,12 @@
 
     </div>
 </div>
+<script>
+function scrollToProjects() {
+    document.getElementById("first-project-section")
+        .scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 </body>
 </html>
